@@ -100,7 +100,7 @@
                         $('<span>').text(value).append('&nbsp;&nbsp;'),
                         $('<a>', {
                             href  : '#',
-                            title : 'Removing tag',
+                            title : 'Удалить тег',
                             text  : 'x'
                         }).click(function () {
                             return $('#' + id).removeTag(escape(value));
@@ -177,7 +177,7 @@
 	$.fn.tagsInput = function(options) { 
     var settings = jQuery.extend({
       interactive:true,
-      defaultText:'add a tag',
+      defaultText:'Добавить тег',
       minChars:0,
       width:'300px',
       height:'100px',
